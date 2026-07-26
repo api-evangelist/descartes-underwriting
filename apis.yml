@@ -1,8 +1,30 @@
 aid: descartes-underwriting
 name: Descartes Underwriting
-description: Descartes Underwriting is a company surfaced as a portfolio company of battery-ventures and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Descartes Underwriting is a Paris-headquartered insurtech, founded in 2019,
+  specializing in parametric insurance for climate, natural-catastrophe, cyber,
+  and emerging corporate risks. It operates two complementary entities —
+  Descartes Underwriting, a global parametric managing general agent (MGA), and
+  Descartes Insurance, an ACPR-licensed European full-stack carrier — using AI,
+  satellite imagery, IoT sensor data, and scientific risk models to structure
+  index-based covers that pay out automatically within days when a predefined
+  trigger is met, without a traditional claims-adjustment process. Backed by
+  Battery Ventures and other investors, the company serves 600+ large
+  corporations and public entities through corporate brokers across 20+ offices
+  worldwide. No public developer API or documentation is published; the company
+  distributes coverage through brokers rather than a self-serve API surface.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://descartesunderwriting.com/themes/custom/webui/images/logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/descartes-underwriting/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +34,39 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Insurance
+- Parametric Insurance
+- Insurtech
+- Climate Risk
+- Reinsurance
+- Risk Management
+- Cyber Insurance
 apis: []
+common:
+- type: DomainSecurity
+  url: security/descartes-underwriting-domain-security.yml
+- type: Website
+  url: https://descartesunderwriting.com/
+- type: Blog
+  url: https://descartesunderwriting.com/insights
+- type: Support
+  url: https://descartesunderwriting.com/contact
+- type: TermsOfService
+  url: https://descartesunderwriting.com/legal-information
+- type: PrivacyPolicy
+  url: https://descartesunderwriting.com/legal-information
+- type: GitHubOrganization
+  url: https://github.com/descartes-underwriting
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
