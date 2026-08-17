@@ -1,0 +1,56 @@
+generated: '2026-08-17'
+method: probed
+source: live HTTP probes of the only host in apis.yml (descartesunderwriting.com)
+note: >-
+  Recorded absence. Every /.well-known/ path on the single host this company
+  publishes returned an honest HTTP 404 (Drupal error page, not a soft-200 SPA
+  shell). There is no API host, developer portal or docs host to probe — api.,
+  developer., docs., portal., broker., app., platform., auth. and id. under
+  descartesunderwriting.com do not resolve in DNS. No WellKnown or SecurityTxt
+  pointer is emitted in apis.yml, because nothing here was served: this file
+  documents an absence, and an absence must not be scored as a presence.
+host: https://descartesunderwriting.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+- path: /.well-known/agent-card.json
+  status: 404
+  file: null
+- path: /.well-known/agent.json
+  status: 404
+  file: null
+- path: /.well-known/dnt-policy.txt
+  status: 404
+  file: null
+hosts_that_do_not_resolve:
+- api.descartesunderwriting.com
+- developer.descartesunderwriting.com
+- docs.descartesunderwriting.com
+- portal.descartesunderwriting.com
+- broker.descartesunderwriting.com
+- brokers.descartesunderwriting.com
+- app.descartesunderwriting.com
+- platform.descartesunderwriting.com
+- my.descartesunderwriting.com
+- login.descartesunderwriting.com
+- auth.descartesunderwriting.com
+- id.descartesunderwriting.com
+- account.descartesunderwriting.com
+- partner.descartesunderwriting.com
+- partners.descartesunderwriting.com
+- data.descartesunderwriting.com
+- trust.descartesunderwriting.com
+- status.descartesunderwriting.com

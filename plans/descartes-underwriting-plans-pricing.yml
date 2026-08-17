@@ -1,0 +1,22 @@
+generated: '2026-08-17'
+method: searched
+source: https://descartesunderwriting.com/for-brokers
+plan_count: 0
+currency: null
+plans: []
+note: >-
+  Descartes Underwriting publishes no plans, tiers or list prices. There is no
+  pricing page (https://descartesunderwriting.com/pricing returns HTTP 404) and
+  no pricing entry in the site sitemap. Cover is a bespoke parametric insurance
+  or reinsurance contract priced per risk, quoted through a corporate broker:
+  the only commercial call to action on the broker page is "Contact Our
+  Commercial Team", and the single conversion path across the site is the
+  contact form at https://descartesunderwriting.com/contact. This is an honest
+  zero — a quote-only enterprise motion — not an unrecorded pricing page.
+evidence:
+- url: https://descartesunderwriting.com/pricing
+  status: 404
+- url: https://descartesunderwriting.com/for-brokers
+  status: 200
+- url: https://descartesunderwriting.com/contact
+  status: 200

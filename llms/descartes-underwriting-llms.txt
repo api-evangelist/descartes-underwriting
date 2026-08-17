@@ -1,0 +1,63 @@
+# Descartes Underwriting
+
+> Paris-headquartered insurtech (founded 2019) specializing in parametric insurance for climate,
+> natural-catastrophe, cyber and emerging corporate risks. It operates two complementary entities —
+> Descartes Underwriting, a global parametric managing general agent (MGA), and Descartes Insurance,
+> an ACPR-licensed European full-stack carrier — using AI, satellite imagery, IoT sensor data and
+> scientific risk models to structure index-based covers that pay out automatically within days when
+> a predefined trigger is met, with no traditional claims-adjustment process. Serves 600+ large
+> corporations and public entities through corporate brokers across 20+ offices worldwide.
+
+## Agent-relevant status
+
+- **No public API.** Descartes Underwriting publishes no developer portal, no API reference, no
+  OpenAPI/AsyncAPI/GraphQL contract, no MCP server and no A2A agent card. Probed 2026-08-17:
+  `/openapi.json`, `/api`, `/docs`, `/developers` and every `/.well-known/*` path on
+  descartesunderwriting.com return HTTP 404, and no `api.`, `developer.`, `docs.`, `portal.`,
+  `broker.` or `app.` subdomain resolves in DNS.
+- **No self-serve onboarding.** Cover is distributed through corporate brokers and quoted per risk;
+  there is no pricing page, no sign-up and no sandbox. The only conversion path is a contact form.
+- **What an agent can do here:** read published research and product literature. Nothing on this
+  surface is callable.
+
+## Company
+
+- [Website](https://descartesunderwriting.com/): corporate site (Drupal).
+- [About Descartes Underwriting](https://descartesunderwriting.com/about/descartes-underwriting): the parametric MGA.
+- [About Descartes Insurance](https://descartesunderwriting.com/about/descartes-insurance): the ACPR-licensed European carrier.
+- [Our technology in action](https://descartesunderwriting.com/about/our-technology-action): risk modelling, satellite and sensor data pipeline.
+- [Parametric insurance explained](https://descartesunderwriting.com/about/parametric-insurance)
+- [Parametric reinsurance explained](https://descartesunderwriting.com/about/parametric-reinsurance)
+- [For brokers](https://descartesunderwriting.com/for-brokers): the distribution channel.
+- [Contact](https://descartesunderwriting.com/contact): the only intake path.
+- [Careers](https://descartesunderwriting.com/careers)
+- [Legal information](https://descartesunderwriting.com/legal-information): terms and privacy.
+
+## Content
+
+- [Insights](https://descartesunderwriting.com/insights): editorial and peril explainers.
+- [White papers](https://descartesunderwriting.com/white-papers): product sheets and technical papers per peril.
+- [Case studies](https://descartesunderwriting.com/case-studies): 80+ named parametric placements.
+- [Newsroom](https://descartesunderwriting.com/newsroom): announcements, appointments and funding.
+- [Solutions](https://descartesunderwriting.com/solutions): perils covered — cyclone, earthquake, flood, hail, wildfire, drought, frost, tornado, excess precipitation, extreme temperatures, wind, yield, river level, technical risks, cyber shutdown, credit and political risk.
+- [Industries](https://descartesunderwriting.com/industries): agriculture, construction, data centers, energy and renewables, entertainment, financial institutions, hospitality, industrial, manufacturing, municipalities and port/airport authorities, public entities, real estate, retail, schools and higher education, solar farms.
+
+## Code
+
+- [GitHub organization](https://github.com/descartes-underwriting): 7 public repositories, all hiring
+  technical tests or internal training (app/data-engineer/data-scientist/devops/software-engineer
+  technical tests, codegen-training) plus `gem-oq-portfolio-analysis`. None is a client SDK, and none
+  publishes an API contract. No first-party package exists on npm, PyPI, RubyGems or crates.io.
+
+## API Evangelist profile
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/descartes-underwriting/refs/heads/main/apis.yml)
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/descartes-underwriting/refs/heads/main/security/descartes-underwriting-domain-security.yml)
+- [Well-known probe (all 404)](https://raw.githubusercontent.com/api-evangelist/descartes-underwriting/refs/heads/main/well-known/descartes-underwriting-well-known.yml)
+- [Plans and pricing (none published)](https://raw.githubusercontent.com/api-evangelist/descartes-underwriting/refs/heads/main/plans/descartes-underwriting-plans-pricing.yml)
+
+<!--
+generated: 2026-08-17
+method: generated
+source: apis.yml + repo artifacts + live probes of descartesunderwriting.com (no /llms.txt is served; HTTP 404)
+-->

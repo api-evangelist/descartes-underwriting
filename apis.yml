@@ -34,7 +34,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-08-17'
 tags:
 - Company
 - Insurance
@@ -60,13 +60,40 @@ common:
   url: https://descartesunderwriting.com/legal-information
 - type: GitHubOrganization
   url: https://github.com/descartes-underwriting
+- type: LLMsTxt
+  url: llms/descartes-underwriting-llms.txt
+- type: Plans
+  url: plans/descartes-underwriting-plans-pricing.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-17'
+  status: minimal
+  artifacts_added: 3
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Descartes Underwriting distributes bespoke parametric cover through corporate
+    brokers and ships no public developer surface at all — /api, /docs,
+    /developers, /openapi.json and every /.well-known/ path on
+    descartesunderwriting.com return HTTP 404, no api./developer./docs./portal./
+    broker./app. subdomain resolves in DNS, and the company's seven public GitHub
+    repositories are hiring technical tests and internal training rather than
+    client SDKs.
+  evidence:
+  - url: https://descartesunderwriting.com/developers
+    status: 404
+  - url: https://descartesunderwriting.com/openapi.json
+    status: 404
+  - url: https://descartesunderwriting.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.descartesunderwriting.com/
+    status: 0
+  - url: https://api.github.com/orgs/descartes-underwriting/repos
+    status: 200
+  checked: '2026-08-17'
